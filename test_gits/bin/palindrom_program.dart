@@ -4,8 +4,8 @@ void main(){
 
   var kata = stdin.readLineSync();
 
-  var kata2 = kata!.split('').reversed.join();
-  if(kata == kata2){
+  var kata2 = kata!.toLowerCase().split('').reversed.join();
+  if(kata.toLowerCase() == kata2){
     print('result : True (palindrom)');
   } else{
     print('result : False (tidak palindrom)');
